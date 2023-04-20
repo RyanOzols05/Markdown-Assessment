@@ -16,8 +16,8 @@
 * Single Inheritance: A subclass inherits features from a single class/superclass
 * Multiple Inheritance: A subclass inherits features from multiple classes/superclasses
   * Types of Multiple Inheritance:
-  1. Multi-Generational: Grandparent --> Parent --> Child
-  2. Multi-Parent: Parent A --> Child & Parent B --> Child
-  3. Mixture of 1 and 2
+   1. Multi-Generational: Grandparent --> Parent --> Child
+   2. Multi-Parent: Parent A --> Child & Parent B --> Child
+   3. Mixture of 1 and 2
 * Multilevel Inheritance: A subclass inherits features from another subclass(A --> B --> C)
 ------
