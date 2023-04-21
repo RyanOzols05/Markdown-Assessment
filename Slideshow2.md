@@ -30,9 +30,9 @@
   * It's possible to compare equality between custom objects
   * You can manipulatehow objects behave when they're met with built-in operators and methods
 ------
-**The repr Function**
+**The ```__repr__``` Function**
 ------
-* repr provides a printable version of custom objects
-* str provides a string version of custom objects
-* In order to make custom objects printable you must override bot repr and str
+* ```__repr__``` provides a printable version of custom objects
+* ```__str__``` provides a string version of custom objects
+* In order to make custom objects printable you must override both ```__repr__``` and ```__str__```
 ------
