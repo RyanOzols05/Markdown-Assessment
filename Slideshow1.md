@@ -43,15 +43,15 @@
 3. Assign a variable that has an instantiation of the class so the class is interactable
 * Methods for a class can be declared in the same way you would normally declare a new function
 ------
-**The init Method and 'self'**
+**The ```__init__``` Method and 'self'**
 ------
-* The initialization(init) method is executed once a class' object is instantiated, which helps to initialize the attributes of an object
+* The initialization(```__init__```) method is executed once a class' object is instantiated, which helps to initialize the attributes of an object
 * The 'self' parameter is used to inidcate that the method is applicable to the object itself
 * 'self' also treats its own attributes as local attributes
 ------
 **List is an object**
 ------
-* L = [1, 2, 3, 4]    L is an instance of a list class, meaning L is an object
+* L = [1, 2, 3, 4]; L is an instance of a list class, meaning L is an object
 * Features:
   * L[i] --> indexing      L[i:j] --> slicing
   * Functions --> len(), min(), max()
