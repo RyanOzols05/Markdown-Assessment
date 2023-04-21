@@ -101,9 +101,81 @@ print(corgi)
 ------
 **Slideshow Three**
 ------
+Blank Single Inheritance Example
+```python
+class ParentClassName:
+  # define parent class
+class InheritanceClass(ParentClassName):
+  # define inherited(child) class
+  def __init__(self, param, param2):
+    ParentClassName.__init__(self, param)
+    self.param2 = param2
+```
 
+Person/Student Inheritance Example
+```python
+class Person:
+  def __init__(self, name):
+    self.__name = name 
+  def getName(self):
+    return self.__name
+class Student(Person):
+  def __init__(self, name, num):
+    Person.__init__(self, name)
+    self.__sNum = num
+  def getStudentName(self):
+    return("%s: %s" % (self.__sNum,self.getName()))
+p = Person(“Barnaby von Fishlips”)
+s = Student(“Charles”, “5623”)
+print(p.getName()) # Output: “Barnaby von Fishlips”
+print(s.getStudentName(), “and” , s.getName()) # Output: “5623: Charles and Charles”
+```
+
+Person/Student Inheritance w/ super() Example
+```python
+class Person:
+  def __init__(self, name):
+    self.__name = name 
+  def getName(self):
+    return self.__name
+class Student(Person):
+  def __init__(self, name, num):
+    super().__init__(name)
+    self.__sNum = num
+  def getStudentName(self):
+    return("%s: %s" % (self.__sNum,self.getName()))
+p = Person(“Barnaby von Fishlips”)
+s = Student(“Charles”, “5623”)
+print(p.getName())
+print(s.getStudentName(), “and” , s.getName())
+```
+
+Inheritance Polymorhpism
+```python
+class Parent:
+  def method(self):
+    pass
+class Child(Parent):
+  def method(self):
+    # can be set to something else(polymorhped) but keep the same name
+    pass
+```
 ------
 **Slideshow Four**
 ------
-
+Deck of Cards(iter and next Example)
+```python
+class Deck:
+  # Start of code
+  def __iter__(self):
+    return self
+   def __next__(self):
+    self.__index += 1
+    if self.__index == len(self.__cards):
+      self.__index = -1 # index reset
+      raise StopIteration
+    else:
+      return self.__cards[self.__index]
+  # Rest of the code
+```
 ------
